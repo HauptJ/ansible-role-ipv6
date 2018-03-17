@@ -1,0 +1,4 @@
+# Default role variable settings
+
+ipv6_addr: ::1
+ipv6_gate: ::1
