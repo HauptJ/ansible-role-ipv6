@@ -9,7 +9,6 @@
     regexp: '^network:'
     line: 'network: {config: disabled}'
 
-
 - name: ifcfg-eth0 IPV6INIT=yes
   lineinfile:
     path: /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -50,4 +49,6 @@
     regexp: '^default via'
     line: 'default via {{ ipv6_gate }}'
 
-- include_tasks: restart.yml
+- name: Restart the server
+  import_tasks: restart.yml
+  when: ipv6_ci_test == false
