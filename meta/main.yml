@@ -4,3 +4,16 @@
 # @Filename: main.yml
 # @Last modified by:   Haupt Joshua
 # @Last modified time: 06-Apr-2018
+
+galaxy_info:
+  author: Joshua Haupt
+  description: Enables and configures IPv6
+  company: hauptj.com
+  license: Apache 2.0
+  min_ansible_version: 2.3
+  platforms:
+  - name: EL
+    versions:
+    - 7
+  galaxy_tags:
+    - ipv6
