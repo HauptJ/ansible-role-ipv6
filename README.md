@@ -5,6 +5,11 @@ Ansible role to enable IPv6 on CentOS 7
 
 The ```ansible-role-ipv6``` role is only necessary if your host supports IPv6 but does not provide an image that supports it out of the box without custom configuration.  To use this role you need to specify the ipv6 address and gateway as a ```host_vars``` variable. DigitalOcean supports IPv6 out of the box, while OVH's Cloud and OpenStack require it to be enabled manually.
 
+## Requirements
+- Ansible 2.3+
+- CentOS 7
+- A statically assigned IPv6 prefix
+
 ## Installation
 1. Fork this repository
 2. git submodule add <git host> roles/ansible-role-ipv6
