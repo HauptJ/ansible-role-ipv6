@@ -7,8 +7,9 @@
   poll: 0
   ignore_errors: true
 
-- name: Waiting 65 seconds
-  pause: seconds=65
+- name: Waiting 150 seconds
+  pause:
+    seconds: 150
 
 - name: Wait for {{ inventory_hostname }} to finish rebooting
   local_action: wait_for host="{{ inventory_hostname }}" state=started port=22 timeout=300
