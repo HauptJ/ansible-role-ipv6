@@ -52,3 +52,5 @@
 - name: Restart the server
   import_tasks: restart.yml
   when: ipv6_ci_test == false
+  tags:
+    - restart
